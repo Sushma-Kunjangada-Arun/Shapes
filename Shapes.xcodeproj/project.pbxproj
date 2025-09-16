@@ -6,14 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		9BEA6CFE2E79C4D9003B5E02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BD0564A2E79153E001C79BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BD056512E79153E001C79BC;
+			remoteInfo = Shapes;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9BD056522E79153E001C79BC /* Shapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BEA6CFA2E79C4D9003B5E02 /* ShapesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShapesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BEA6D0C2E79C987003B5E02 /* Shapes.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Shapes.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9BD056542E79153E001C79BC /* Shapes */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		9BEA6CFB2E79C4D9003B5E02 /* ShapesTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ShapesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +43,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BEA6CF72E79C4D9003B5E02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9BD056492E79153E001C79BC = {
 			isa = PBXGroup;
 			children = (
+				9BEA6D0C2E79C987003B5E02 /* Shapes.xctestplan */,
 				9BD056542E79153E001C79BC /* Shapes */,
+				9BEA6CFB2E79C4D9003B5E02 /* ShapesTests */,
 				9BD056532E79153E001C79BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD056522E79153E001C79BC /* Shapes.app */,
+				9BEA6CFA2E79C4D9003B5E02 /* ShapesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +97,29 @@
 			productReference = 9BD056522E79153E001C79BC /* Shapes.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9BEA6CF92E79C4D9003B5E02 /* ShapesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BEA6D002E79C4D9003B5E02 /* Build configuration list for PBXNativeTarget "ShapesTests" */;
+			buildPhases = (
+				9BEA6CF62E79C4D9003B5E02 /* Sources */,
+				9BEA6CF72E79C4D9003B5E02 /* Frameworks */,
+				9BEA6CF82E79C4D9003B5E02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BEA6CFF2E79C4D9003B5E02 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9BEA6CFB2E79C4D9003B5E02 /* ShapesTests */,
+			);
+			name = ShapesTests;
+			packageProductDependencies = (
+			);
+			productName = ShapesTests;
+			productReference = 9BEA6CFA2E79C4D9003B5E02 /* ShapesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +132,11 @@
 				TargetAttributes = {
 					9BD056512E79153E001C79BC = {
 						CreatedOnToolsVersion = 26.0;
+					};
+					9BEA6CF92E79C4D9003B5E02 = {
+						CreatedOnToolsVersion = 26.0;
+						LastSwiftMigration = 2600;
+						TestTargetID = 9BD056512E79153E001C79BC;
 					};
 				};
 			};
@@ -100,12 +155,20 @@
 			projectRoot = "";
 			targets = (
 				9BD056512E79153E001C79BC /* Shapes */,
+				9BEA6CF92E79C4D9003B5E02 /* ShapesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9BD056502E79153E001C79BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEA6CF82E79C4D9003B5E02 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +185,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BEA6CF62E79C4D9003B5E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BEA6CFF2E79C4D9003B5E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BD056512E79153E001C79BC /* Shapes */;
+			targetProxy = 9BEA6CFE2E79C4D9003B5E02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9BD0565B2E79153F001C79BC /* Debug */ = {
@@ -261,6 +339,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,6 +372,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +387,53 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BEA6D012E79C4D9003B5E02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PD4UM7URQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ka.sushma.ShapesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shapes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shapes";
+			};
+			name = Debug;
+		};
+		9BEA6D022E79C4D9003B5E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PD4UM7URQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ka.sushma.ShapesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shapes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shapes";
 			};
 			name = Release;
 		};
@@ -327,6 +454,15 @@
 			buildConfigurations = (
 				9BD0565E2E79153F001C79BC /* Debug */,
 				9BD0565F2E79153F001C79BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BEA6D002E79C4D9003B5E02 /* Build configuration list for PBXNativeTarget "ShapesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BEA6D012E79C4D9003B5E02 /* Debug */,
+				9BEA6D022E79C4D9003B5E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

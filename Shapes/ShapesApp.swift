@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct ShapesApp: App {
+    private var isRunningTests: Bool {
+        ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isRunningTests {
+                Text("Test Host")
+            } else {
+                ContentView()
+            }
         }
     }
 }
